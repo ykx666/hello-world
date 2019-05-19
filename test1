@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class test1 {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("输入半径:");
+		test1 hello=new test1();
+		int R=input.nextInt();
+		hello.circle(R);
+	}
+	public void circle(int R) {
+	    double PI=3.14;
+		double circumference=2*PI*R;
+		double circulararea=2*PI*R*R;
+		double ballarea=(4*PI*R*R*R)/3;
+		int circumference1=(int)circumference;
+		int circulararea1=(int)circulararea;
+		int ballarea1=(int)ballarea;
+		System.out.println("圆的周长为:"+circumference1);
+		System.out.println("圆的面积为:"+circulararea1);
+		System.out.println("球的体积为:"+ballarea1);
+	}
+}
